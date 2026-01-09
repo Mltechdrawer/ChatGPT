@@ -1,0 +1,10 @@
+site_name: "Nueva asignatura"
+theme:
+  name: material
+nav:
+  - Inicio: index.md
+  - "Tema 1": tema1/index.md
+  - "Tema 2": tema2/index.md
+  - "Tema 3": tema3/index.md
+  - "Tema 4": tema4/index.md
+  - "Tema 5": tema5/index.md
