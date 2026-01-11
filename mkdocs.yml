@@ -1,10 +1,10 @@
-site_name: "Nueva asignatura"
+site_name: "ChatGPT"
 theme:
   name: material
 nav:
   - Inicio: index.md
-  - "Tema 1": tema1/index.md
-  - "Tema 2": tema2/index.md
-  - "Tema 3": tema3/index.md
-  - "Tema 4": tema4/index.md
-  - "Tema 5": tema5/index.md
+  - "LLMs": 1_LLM/index.md
+  - "Ingeniería de Prompts": 2_IP/index.md
+  - "Ingeniería de Contexto": 3_IC/index.md
+  - "Programación": 4_Programación/index.md
+  - "Trabajo Práctico": 5_Trabajo Práctico/index.md
