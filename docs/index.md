@@ -1,8 +1,6 @@
 # ChatGPT: fundamentos y aplicaciones
 ![Portada](files/ChatGPT.png "ChatGPT")
 
-<h1 style="text-align: center;">Bienvenido al curso sobre ChatGPT</h1>
-
 ## 🤖 ChatGPT
 
 Este curso ofrece una introducción sólida y práctica a **ChatGPT** y a los **grandes modelos del lenguaje (LLM)**, abordando tanto sus fundamentos teóricos como su uso avanzado en contextos académicos y profesionales.
