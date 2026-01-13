@@ -109,6 +109,8 @@ Un buen diseño de prompts se basa en los siguientes principios:
 
 Estos principios permiten maximizar la utilidad del modelo y reducir respuestas erróneas o ambiguas.
 
+[Delimitadores](delimitadores.md)
+
 ---
 
 ## 8. Técnicas avanzadas de prompting
@@ -168,6 +170,93 @@ Estas técnicas permiten **modelar el estilo, formato y nivel de detalle** de la
 
 [Few shot rol y estilo consistente](ejemplosprompts.md#4-few-shot)
 
+### 8.5 Tree of Thoughts (ToT)
+
+La técnica **Tree of Thoughts (ToT)** es una extensión avanzada del enfoque *Chain of Thought* que permite a los modelos de lenguaje **explorar múltiples caminos de razonamiento en paralelo**, organizados en forma de árbol, en lugar de seguir una única secuencia lineal de pensamiento.
+
+#### Idea principal
+
+En lugar de generar una sola cadena de razonamiento, el modelo:
+
+* Produce **varias alternativas de pensamiento** en cada paso,
+* Evalúa la calidad o viabilidad de cada alternativa,
+* Descarta ramas poco prometedoras,
+* Continúa explorando las ramas más relevantes hasta alcanzar una solución final.
+
+Este enfoque resulta especialmente eficaz en **problemas complejos**, donde la exploración, la planificación y la evaluación intermedia son fundamentales.
+
+#### Diferencias con Chain of Thought
+
+| Chain of Thought                    | Tree of Thoughts                  |
+| ----------------------------------- | --------------------------------- |
+| Razonamiento lineal                 | Razonamiento ramificado           |
+| Una única secuencia                 | Múltiples caminos posibles        |
+| Sin evaluación intermedia explícita | Evaluación y poda de ramas        |
+| Adecuado para problemas moderados   | Adecuado para problemas complejos |
+
+[Árbol de pensamientos](ejemplosprompts.md#1-tree-of-thoughts)
+
+#### Casos de uso recomendados
+
+* Problemas de lógica y razonamiento abstracto
+* Planificación y toma de decisiones
+* Juegos, puzzles y búsqueda de estrategias
+* Tareas donde existen múltiples soluciones posibles
+
+#### Ventajas
+
+* Fomenta un razonamiento más deliberado y profundo
+* Reduce la probabilidad de soluciones apresuradas
+* Mejora la calidad en tareas que requieren exploración
+
+#### Limitaciones
+
+* Incrementa el coste computacional
+* No siempre es necesario para tareas simples
+
+---
+
+### 8.6 Visualization of Thoughts (VoT)
+
+La **Visualization of Thoughts (VoT)** es una técnica emergente que propone inducir al modelo a **representar su razonamiento de forma visual o espacial**, como diagramas mentales, mapas conceptuales o estructuras gráficas, con el objetivo de mejorar su capacidad de razonamiento en determinados dominios.
+
+#### Idea principal
+
+El modelo no solo explica sus pasos, sino que:
+
+* Organiza el razonamiento como si fuera un **esquema visual**,
+* Usa estructuras espaciales (listas jerárquicas, grafos, mapas),
+* Simula la construcción de un “mapa mental” del problema.
+
+Esta técnica ha mostrado resultados prometedores en tareas de **razonamiento espacial**, navegación, planificación y comprensión estructural.
+
+[Visualización de pensamientos](ejemplosprompts.md#1-visualization-of-thoughts)
+
+#### Casos de uso potenciales
+
+* Razonamiento espacial o geométrico
+* Análisis de sistemas complejos
+* Problemas que se benefician de esquemas o mapas
+* Apoyo al razonamiento multimodal
+
+#### Estado actual de la técnica
+
+**Técnica experimental**
+
+* No está aún consolidada como estándar en ingeniería de prompts
+* Procede principalmente de investigación académica reciente
+* Se considera una **línea emergente**, más que una práctica establecida
+
+#### Recomendación didáctica
+
+Esta técnica es adecuada para:
+
+* Introducir tendencias actuales de investigación
+* Mostrar los límites y evolución de la ingeniería de prompts
+* Contextos avanzados o exploratorios
+
+No se recomienda como técnica básica o generalista.
+
 ---
 
 ## 9. Especificación del formato de salida
@@ -190,7 +279,7 @@ Los prompts pueden indicar explícitamente el **formato de la respuesta**, como:
 
 La ingeniería de prompts no consiste únicamente en “hacer buenas preguntas”, sino en **comprender cómo interactúan los modelos de lenguaje con el texto de entrada**.
 
-Dominar esta disciplina permite:  
+Dominar esta disciplina permite:    
 - mejorar la calidad de las respuestas,  
 - reducir errores y alucinaciones,  
 - aprovechar de forma crítica y responsable el potencial de los LLMs.  

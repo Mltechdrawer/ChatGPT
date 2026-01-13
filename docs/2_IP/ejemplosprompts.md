@@ -222,6 +222,33 @@ rol y estilo consistente
 *El few-shot refuerza el tono, el rol y el estilo de respuesta.*
 
 ---
+## Ejemplo *Tree of Thoughts (ToT)*
+
+### 1 Tree of thoughts
+
+```text
+Resuelve el siguiente problema explorando múltiples enfoques posibles.
+Organiza tus ideas como un árbol de razonamiento:
+- Genera varias opciones en cada paso
+- Evalúa brevemente cada una
+- Continúa desarrollando las más prometedoras
+Finalmente, proporciona la mejor solución encontrada.
+```
+---
+
+## Ejemplo *Visualization of Thoughts (ToT)*
+
+### 1 Visualization of thoughts
+
+```text
+Analiza el problema creando una representación visual de tus pensamientos.
+Organiza la información como si fuera un diagrama o mapa conceptual:
+- Identifica los elementos principales
+- Muestra relaciones entre ellos
+- Usa una estructura jerárquica clara
+Después, explica la solución final.
+```
+---
 
 ## Ejemplos de prompts con formato
 
