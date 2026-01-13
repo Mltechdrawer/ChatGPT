@@ -723,11 +723,11 @@
 <hr />
 <h2 id="2-que-es-un-prompt">2. ¿Qué es un prompt?</h2>
 <p>Un <strong>prompt</strong> es el texto de entrada que se proporciona a un modelo de lenguaje para guiar la generación de una respuesta. Puede adoptar múltiples formas, desde una pregunta sencilla hasta una instrucción compleja con contexto, ejemplos y restricciones.</p>
-<p>Los prompts permiten:
-- Guiar la generación de respuestas.
-- Optimizar el rendimiento del modelo.
-- Adaptar el comportamiento del modelo a distintos contextos.
-- Evaluar la calidad y fiabilidad de las respuestas obtenidas :contentReference[oaicite:1]{index=1}.</p>
+<p>Los prompts permiten:<br />
+- Guiar la generación de respuestas.<br />
+- Optimizar el rendimiento del modelo.<br />
+- Adaptar el comportamiento del modelo a distintos contextos.<br />
+- Evaluar la calidad y fiabilidad de las respuestas obtenidas  </p>
 <hr />
 <h2 id="3-objetivos-de-la-ingenieria-de-prompts">3. Objetivos de la ingeniería de prompts</h2>
 <p>Los principales objetivos de la ingeniería de prompts son:</p>
@@ -745,7 +745,7 @@
 <li><strong>Contexto y antecedentes</strong>  </li>
 <li><strong>Objetivo o propósito</strong>  </li>
 <li><strong>Palabras clave y términos relevantes</strong>  </li>
-<li><strong>Limitaciones o directrices específicas</strong> :contentReference[oaicite:2]{index=2}</li>
+<li><strong>Limitaciones o directrices específicas</strong> </li>
 </ol>
 <h3 id="ejemplo-de-estructura-eficiente">Ejemplo de estructura eficiente</h3>
 <ul>
@@ -769,11 +769,12 @@
 <blockquote>
 <p><em>“Dime cosas sobre plantas.”</em></p>
 </blockquote>
-<p>Este prompt carece de:
-- claridad,
-- contexto,
-- objetivo definido,</p>
-<p>lo que dificulta que el modelo genere una respuesta ajustada a las expectativas del usuario :contentReference[oaicite:3]{index=3}.</p>
+<p>Este prompt carece de:<br />
+- claridad,<br />
+- contexto,<br />
+- objetivo definido,  </p>
+<p>No define qué aspecto de las plantas interesa(biología,uso en jardinería, importancia ecológica, etc.), no proporciona contexto o antecedentes, y no establece un objetivo o propósito claro para la respuesta.
+Esta falta de estructura y detalles puede resultar en una respuesta de la IA que no cumpla con las expectativas o necesidades del usuario.</p>
 <hr />
 <h2 id="6-tipos-de-prompts">6. Tipos de prompts</h2>
 <p>Según su finalidad, los prompts pueden clasificarse en:</p>
@@ -800,7 +801,7 @@
 </li>
 <li>
 <p><strong>Técnicos</strong><br />
-<em>Ejemplo:</em> Explica el funcionamiento de los motores eléctricos :contentReference[oaicite:4]{index=4}.</p>
+<em>Ejemplo:</em> Explica el funcionamiento de los motores eléctricos.</p>
 </li>
 </ol>
 <hr />
@@ -819,6 +820,9 @@
 <h2 id="8-tecnicas-avanzadas-de-prompting">8. Técnicas avanzadas de prompting</h2>
 <h3 id="81-trigger-words">8.1 Trigger words</h3>
 <p>Las <em>trigger words</em> o <strong>palabras desencadenantes</strong> orientan al modelo hacia un tipo de razonamiento o respuesta concreta, por ejemplo: <em>analiza</em>, <em>justifica</em>, <em>compara</em>, <em>resume</em>.</p>
+<p><a href="ejemplosprompts/#1-prompt-analitico">Analítico</a></p>
+<p><a href="ejemplosprompts/#2-prompt-explicativo-paso-a-paso">Explicativo</a></p>
+<p><a href="ejemplosprompts/#3-prompt-comparativo-y-critico">Comparativo y crítico</a></p>
 <hr />
 <h3 id="82-chain-of-thought-cot">8.2 Chain of Thought (CoT)</h3>
 <p>La técnica <strong>Chain of Thought</strong> consiste en pedir explícitamente al modelo que <strong>razone paso a paso</strong>, lo que mejora el rendimiento en problemas complejos.</p>
@@ -826,6 +830,9 @@
 <blockquote>
 <p><em>Resuelve el problema paso a paso, explicando el razonamiento seguido.</em></p>
 </blockquote>
+<p><a href="ejemplosprompts/#1-problema-cuantitativo">Problema cuantitativo</a></p>
+<p><a href="ejemplosprompts/#2-decision-multicriterio">Decisión multicriterio</a></p>
+<p><a href="ejemplosprompts/#3-optimizacion-de-ruta">Optimización de ruta</a></p>
 <hr />
 <h3 id="83-prompt-priming">8.3 Prompt Priming</h3>
 <p>El <strong>priming</strong> consiste en proporcionar instrucciones iniciales que preparan al modelo antes de la tarea principal.</p>
@@ -833,6 +840,9 @@
 <blockquote>
 <p><em>Inicia tu respuesta con una introducción breve, continúa con un ejemplo paso a paso y finaliza con una pregunta de práctica.</em></p>
 </blockquote>
+<p><a href="ejemplosprompts/#1-priming-con-rol-experto">Priming con rol experto</a></p>
+<p><a href="ejemplosprompts/#2-priming-con-estructura-y-estilo">Priming con estructura y estilo</a></p>
+<p><a href="ejemplosprompts/#3-priming-con-contexto-de-uso">Priming con contexto de uso</a></p>
 <hr />
 <h3 id="84-one-shot-y-few-shot-prompting">8.4 One-shot y Few-shot prompting</h3>
 <ul>
@@ -840,6 +850,10 @@
 <li><strong>Few-shot:</strong> se proporcionan varios ejemplos para guiar el comportamiento del modelo.</li>
 </ul>
 <p>Estas técnicas permiten <strong>modelar el estilo, formato y nivel de detalle</strong> de la respuesta.</p>
+<p><a href="ejemplosprompts/#1-one-shot">One shot un único ejemplo</a></p>
+<p><a href="ejemplosprompts/#2-one-shot">One shot formato y estilo</a></p>
+<p><a href="ejemplosprompts/#3-few-shot">Few shot varios ejemplos</a></p>
+<p><a href="ejemplosprompts/#4-few-shot">Few shot rol y estilo consistente</a></p>
 <hr />
 <h2 id="9-especificacion-del-formato-de-salida">9. Especificación del formato de salida</h2>
 <p>Los prompts pueden indicar explícitamente el <strong>formato de la respuesta</strong>, como:</p>
@@ -850,16 +864,19 @@
 <li>Código fuente</li>
 <li>Resúmenes</li>
 <li>Traducciones</li>
-<li>Formatos estructurados (CSV, JSON, etc.) :contentReference[oaicite:5]{index=5}</li>
+<li>Formatos estructurados (CSV, JSON, etc.)</li>
 </ul>
+<p><a href="ejemplosprompts/#1-especificar-el-formato-de-salida">Especificar el formato de salida</a></p>
 <hr />
 <h2 id="10-reflexion-final">10. Reflexión final</h2>
 <p>La ingeniería de prompts no consiste únicamente en “hacer buenas preguntas”, sino en <strong>comprender cómo interactúan los modelos de lenguaje con el texto de entrada</strong>.</p>
-<p>Dominar esta disciplina permite:
-- mejorar la calidad de las respuestas,
-- reducir errores y alucinaciones,
-- aprovechar de forma crítica y responsable el potencial de los LLMs.</p>
+<p>Dominar esta disciplina permite:<br />
+- mejorar la calidad de las respuestas,<br />
+- reducir errores y alucinaciones,<br />
+- aprovechar de forma crítica y responsable el potencial de los LLMs.  </p>
 <p>Este conocimiento es clave para el uso profesional y académico de herramientas como ChatGPT.</p>
+<p><a href="ejemplosparaprobar/">Ejemplos prácticos</a> </p>
+<p><a href="actividad1/">Actividad 1</a></p>
 
 
 
