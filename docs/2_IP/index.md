@@ -13,11 +13,11 @@ Dado que los LLMs generan sus respuestas en función del texto de entrada, la ca
 
 Un **prompt** es el texto de entrada que se proporciona a un modelo de lenguaje para guiar la generación de una respuesta. Puede adoptar múltiples formas, desde una pregunta sencilla hasta una instrucción compleja con contexto, ejemplos y restricciones.
 
-Los prompts permiten:
-- Guiar la generación de respuestas.
-- Optimizar el rendimiento del modelo.
-- Adaptar el comportamiento del modelo a distintos contextos.
-- Evaluar la calidad y fiabilidad de las respuestas obtenidas :contentReference[oaicite:1]{index=1}.
+Los prompts permiten:  
+- Guiar la generación de respuestas.  
+- Optimizar el rendimiento del modelo.  
+- Adaptar el comportamiento del modelo a distintos contextos.  
+- Evaluar la calidad y fiabilidad de las respuestas obtenidas  
 
 ---
 
@@ -40,7 +40,7 @@ Un prompt eficaz suele componerse de los siguientes elementos:
 2. **Contexto y antecedentes**  
 3. **Objetivo o propósito**  
 4. **Palabras clave y términos relevantes**  
-5. **Limitaciones o directrices específicas** :contentReference[oaicite:2]{index=2}
+5. **Limitaciones o directrices específicas** 
 
 ### Ejemplo de estructura eficiente
 
@@ -62,12 +62,13 @@ Un prompt mal diseñado puede generar respuestas vagas o irrelevantes.
 **Ejemplo de prompt ineficiente:**
 > *“Dime cosas sobre plantas.”*
 
-Este prompt carece de:
-- claridad,
-- contexto,
-- objetivo definido,
+Este prompt carece de:  
+- claridad,  
+- contexto,  
+- objetivo definido,  
 
-lo que dificulta que el modelo genere una respuesta ajustada a las expectativas del usuario :contentReference[oaicite:3]{index=3}.
+No define qué aspecto de las plantas interesa(biología,uso en jardinería, importancia ecológica, etc.), no proporciona contexto o antecedentes, y no establece un objetivo o propósito claro para la respuesta.
+Esta falta de estructura y detalles puede resultar en una respuesta de la IA que no cumpla con las expectativas o necesidades del usuario.
 
 ---
 
@@ -91,7 +92,7 @@ Según su finalidad, los prompts pueden clasificarse en:
    *Ejemplo:* Analiza las tendencias de ventas del último trimestre.
 
 6. **Técnicos**  
-   *Ejemplo:* Explica el funcionamiento de los motores eléctricos :contentReference[oaicite:4]{index=4}.
+   *Ejemplo:* Explica el funcionamiento de los motores eléctricos.
 
 ---
 
@@ -115,14 +116,25 @@ Estos principios permiten maximizar la utilidad del modelo y reducir respuestas 
 ### 8.1 Trigger words
 Las *trigger words* o **palabras desencadenantes** orientan al modelo hacia un tipo de razonamiento o respuesta concreta, por ejemplo: *analiza*, *justifica*, *compara*, *resume*.
 
----
+[Analítico](ejemplosprompts.md#1-prompt-analitico)
 
+[Explicativo](ejemplosprompts.md#2-prompt-explicativo-paso-a-paso)
+
+[Comparativo y crítico](ejemplosprompts.md#3-prompt-comparativo-y-critico)
+
+---
 ### 8.2 Chain of Thought (CoT)
 
 La técnica **Chain of Thought** consiste en pedir explícitamente al modelo que **razone paso a paso**, lo que mejora el rendimiento en problemas complejos.
 
 **Ejemplo:**
 > *Resuelve el problema paso a paso, explicando el razonamiento seguido.*
+
+[Problema cuantitativo](ejemplosprompts.md#1-problema-cuantitativo)
+
+[Decisión multicriterio](ejemplosprompts.md#2-decision-multicriterio)
+
+[Optimización de ruta](ejemplosprompts.md#3-optimizacion-de-ruta)
 
 ---
 
@@ -133,6 +145,12 @@ El **priming** consiste en proporcionar instrucciones iniciales que preparan al 
 **Ejemplo:**
 > *Inicia tu respuesta con una introducción breve, continúa con un ejemplo paso a paso y finaliza con una pregunta de práctica.*
 
+[Priming con rol experto](ejemplosprompts.md#1-priming-con-rol-experto)
+
+[Priming con estructura y estilo](ejemplosprompts.md#2-priming-con-estructura-y-estilo)
+
+[Priming con contexto de uso](ejemplosprompts.md#3-priming-con-contexto-de-uso)
+
 ---
 
 ### 8.4 One-shot y Few-shot prompting
@@ -141,6 +159,14 @@ El **priming** consiste en proporcionar instrucciones iniciales que preparan al 
 - **Few-shot:** se proporcionan varios ejemplos para guiar el comportamiento del modelo.
 
 Estas técnicas permiten **modelar el estilo, formato y nivel de detalle** de la respuesta.
+
+[One shot un único ejemplo](ejemplosprompts.md#1-one-shot)
+
+[One shot formato y estilo](ejemplosprompts.md#2-one-shot)
+
+[Few shot varios ejemplos](ejemplosprompts.md#3-few-shot)
+
+[Few shot rol y estilo consistente](ejemplosprompts.md#4-few-shot)
 
 ---
 
@@ -154,7 +180,9 @@ Los prompts pueden indicar explícitamente el **formato de la respuesta**, como:
 - Código fuente
 - Resúmenes
 - Traducciones
-- Formatos estructurados (CSV, JSON, etc.) :contentReference[oaicite:5]{index=5}
+- Formatos estructurados (CSV, JSON, etc.)
+
+[Especificar el formato de salida](ejemplosprompts.md#1-especificar-el-formato-de-salida)
 
 ---
 
@@ -162,10 +190,13 @@ Los prompts pueden indicar explícitamente el **formato de la respuesta**, como:
 
 La ingeniería de prompts no consiste únicamente en “hacer buenas preguntas”, sino en **comprender cómo interactúan los modelos de lenguaje con el texto de entrada**.
 
-Dominar esta disciplina permite:
-- mejorar la calidad de las respuestas,
-- reducir errores y alucinaciones,
-- aprovechar de forma crítica y responsable el potencial de los LLMs.
+Dominar esta disciplina permite:  
+- mejorar la calidad de las respuestas,  
+- reducir errores y alucinaciones,  
+- aprovechar de forma crítica y responsable el potencial de los LLMs.  
 
 Este conocimiento es clave para el uso profesional y académico de herramientas como ChatGPT.
 
+[Ejemplos prácticos](ejemplosparaprobar.md) 
+
+[Actividad 1](actividad1.md)

@@ -71,6 +71,8 @@ Principales versiones:
 
 ChatGPT se lanzó públicamente el **30 de noviembre de 2022** y supuso la popularización masiva de los LLMs.
 
+[Versiones](versiones.md "Versiones ChatGPT")
+
 ---
 
 ## 7. ¿Cómo funcionan los LLMs?
